@@ -21,3 +21,5 @@ Here is a demo, as how your output should look like. ( the UI may not be `exactl
 ![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/calculator-react.gif)
 
 Happy Coding ❤️!
+
++++Handled all the edge cases
