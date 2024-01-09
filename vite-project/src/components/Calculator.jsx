@@ -11,20 +11,36 @@ function Calculator() {
                 setExp(exp+val+"*");
                 setVal()
                 break;     
+            case "-":
+                setExp(exp+val+"-");
+                setVal()
+                break;     
+            case "+":
+                setExp(exp+val+"+");
+                setVal()
+                break;     
+            case "/":
+                setExp(exp+val+"/");
+                setVal()
+                break;    
+
             case "=": 
                 setVal(eval(exp+val))
                 setExp("")
                 break;
+
             case "ac":
                 setVal();
                 setExp("");
                 break;
+
             case "del":
                 if(val.length>0){
                     let newval = val.slice(0,-1);
                     setVal(newval);
                 }
                 break;
+                
             default:
                 setVal((val=="0" || isNaN(val))?e.target.innerHTML:val+e.target.innerHTML);
         }
